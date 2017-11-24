@@ -1,0 +1,32 @@
+Release Notes 1.0
+ 11/22/2017
+ 
+ Welcome to Dan's Life!
+ 
+ First coding excersize in decades so please be gentle.
+ Mostly works.
+ 
+ Known open issues
+ 
+ - File LOAD works with .RLE files.  These are run length encoded files for 
+   Conway's life.  For formate description, see: 
+   http://www.conwaylife.com/w/index.php?title=Run_Length_Encoded
+   I have only implemented the rule B3/S23.  All others behave strange.
+ 
+ - File SAVE does not work.  It will create a test file.
+ 
+ - You can paint one pixel at a time.  When I get a chance
+   I will add a continous mouse down paint.
+ 
+ - The RUN infinite loop is truly infinite.  It's a hack.
+   The only way to break out of it is with a key press or mouse button.
+   Open to suggestions for a more elegant implementation.
+ 
+ - There is one HUGE optimization to make.  Currently I redraw each cell
+   each refresh whether or not there has been a change.  Thats a lot of 
+   reduntant little tiny rectangle calls.  It will eventually bother me enough
+   to fix.  Seems plenty fast right now though.
+ 
+ ENJOY!
+     --- Dan
+ 
